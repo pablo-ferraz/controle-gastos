@@ -1,0 +1,42 @@
+// Traduções pt-BR para os textos padrão do AG Grid Community usados neste
+// app (paginação, menu de filtro e estado vazio). O AG Grid não distribui
+// um pacote de localização pronto para a edição community.
+export const AG_GRID_LOCALE_PT_BR: Record<string, string> = {
+  page: 'Página',
+  more: 'Mais',
+  to: 'até',
+  of: 'de',
+  next: 'Próxima',
+  last: 'Última',
+  first: 'Primeira',
+  previous: 'Anterior',
+  loadingOoo: 'Carregando...',
+  noRowsToShow: 'Nenhum lançamento para exibir',
+  pageSizeSelectorLabel: 'Itens por página:',
+  ariaPageSizeSelectorLabel: 'Itens por página',
+
+  filterOoo: 'Filtrar...',
+  equals: 'Igual a',
+  notEqual: 'Diferente de',
+  contains: 'Contém',
+  notContains: 'Não contém',
+  startsWith: 'Começa com',
+  endsWith: 'Termina com',
+  blank: 'Vazio',
+  notBlank: 'Não vazio',
+  lessThan: 'Menor que',
+  greaterThan: 'Maior que',
+  lessThanOrEqual: 'Menor ou igual a',
+  greaterThanOrEqual: 'Maior ou igual a',
+  inRange: 'Entre',
+  applyFilter: 'Aplicar',
+  resetFilter: 'Limpar',
+  clearFilter: 'Limpar',
+  cancelFilter: 'Cancelar',
+  andCondition: 'E',
+  orCondition: 'Ou',
+
+  sortAscending: 'Ordem crescente',
+  sortDescending: 'Ordem decrescente',
+  sortUnSort: 'Remover ordenação',
+};
