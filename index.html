@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/controle-gastos/favicon.svg" />
+    <link rel="apple-touch-icon" href="/controle-gastos/icons/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="App pessoal para registrar gastos e acompanhar por categoria." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9f9f7" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0d" />
+    <title>Controle de Gastos</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('controle-gastos:theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (error) {
+          /* localStorage indisponível (modo privado, etc.) — segue com o tema padrão do sistema */
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/controle-gastos/assets/index-CX0arXRN.js"></script>
+    <link rel="modulepreload" crossorigin href="/controle-gastos/assets/rolldown-runtime-hePW80VL.js">
+    <link rel="modulepreload" crossorigin href="/controle-gastos/assets/vendor-ag-charts-Bk0jQHUD.js">
+    <link rel="modulepreload" crossorigin href="/controle-gastos/assets/vendor-ag-grid-DKzkRSm_.js">
+    <link rel="modulepreload" crossorigin href="/controle-gastos/assets/vendor-react-TsoIL515.js">
+    <link rel="stylesheet" crossorigin href="/controle-gastos/assets/index-al7_PA9C.css">
+  <link rel="manifest" href="/controle-gastos/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
