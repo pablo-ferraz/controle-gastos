@@ -22,3 +22,11 @@ Registro cronológico do desenvolvimento feito pelo Claude Code nesta branch.
 | 2026-09-10 21:49 | Build de produção: bundle do AG Grid/AG Charts excedia o limite padrão do Workbox (2 MiB) — ajustado `maximumFileSizeToCacheInBytes` e adicionado code-splitting manual (React / AG Grid / AG Charts). |
 | 2026-09-10 21:51 | Testado build de produção com Playwright: service worker ativa e o app carrega o dashboard normalmente com a rede desligada (offline). |
 | 2026-09-10 21:52 | Commit: `feat: configuração de PWA (manifest, service worker, ícones)`. |
+| 2026-09-10 21:53 | PR #1 aberta e mergeada em `main` (merge commit, sem squash). |
+| 2026-09-10 22:00 | Usuário instalou o app no PC via `npm run build` + `npm run preview` (instalação de PWA bem-sucedida no Chrome/Edge). |
+| 2026-09-10 22:05 | Usuário pediu para usar no Android. Diagnosticado: PWA exige HTTPS (exceto localhost), então rede local por HTTP não funcionaria bem. |
+| 2026-09-10 22:10 | Decisão do usuário: publicar no GitHub Pages. Bloqueio encontrado: o repositório era privado e o plano gratuito do GitHub não permite Pages em repositórios privados. |
+| 2026-09-10 22:12 | Decisão do usuário: tornar o repositório público (dados de gastos continuam privados, só o código-fonte fica visível). |
+| 2026-09-10 22:15 | Commit: `chore: configurar base path para deploy no GitHub Pages` (branch `chore/github-pages-deploy`, PR #2, mergeada). |
+| 2026-09-10 22:20 | Build publicado na branch `gh-pages` via `gh-pages` (npx) e GitHub Pages habilitado via API. |
+| 2026-09-10 22:33 | App no ar em `https://pablo-ferraz.github.io/controle-gastos/`. Testado com Playwright: manifest válido, service worker ativo, sem erros de console, em viewport mobile. |
