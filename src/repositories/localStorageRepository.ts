@@ -15,10 +15,13 @@ interface BaseEntity {
 export class LocalStorageRepository<T extends BaseEntity, CreateInput>
   implements CrudRepository<T, CreateInput>
 {
-  constructor(
-    private readonly storageKey: string,
-    private readonly seedFactory?: () => T[],
-  ) {}
+  private readonly storageKey: string;
+  private readonly seedFactory?: () => T[];
+
+  constructor(storageKey: string, seedFactory?: () => T[]) {
+    this.storageKey = storageKey;
+    this.seedFactory = seedFactory;
+  }
 
   private readAll(): T[] {
     if (typeof localStorage === 'undefined') return [];
